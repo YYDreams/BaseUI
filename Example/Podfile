@@ -1,0 +1,6 @@
+use_frameworks!
+target 'BaseUI_Tests' do
+  pod 'BaseUI', :path => '../'
+  
+  
+end
