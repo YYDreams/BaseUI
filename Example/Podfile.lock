@@ -1,0 +1,16 @@
+PODS:
+  - BaseUI (0.1.0)
+
+DEPENDENCIES:
+  - BaseUI (from `../`)
+
+EXTERNAL SOURCES:
+  BaseUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BaseUI: fbf0e710d857e04341db156b80394e94a06b75e6
+
+PODFILE CHECKSUM: 54dbe93485fff65e4ee35ee0112eccf66c7073c9
+
+COCOAPODS: 1.10.1
