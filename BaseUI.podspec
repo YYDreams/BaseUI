@@ -45,5 +45,7 @@ TODO: Add long description of the pod here.
   s.dependency 'XMUtil'
   s.dependency 'XMMediator'
   s.dependency 'XMHomeUIExtension'
+  s.dependency 'HandyJSON'
+  s.dependency 'SDWebImage'
   
 end

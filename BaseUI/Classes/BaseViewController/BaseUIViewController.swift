@@ -37,7 +37,7 @@ open  class BaseUIViewController: UIViewController {
     
     // MARK: ------------------------- CycLife
     open override func viewDidLoad() {
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = kBgColor
         super.viewDidLoad()
     }
     

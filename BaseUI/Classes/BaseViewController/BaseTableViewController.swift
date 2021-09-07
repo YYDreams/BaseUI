@@ -12,10 +12,16 @@ open  class BaseTableViewController: BaseUIViewController {
     
     
     // MARK: ------------------------- Propertys
-  public lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: kScreenBound, style: .plain)
+    public lazy var tableView: UITableView = {
+        let tableView = UITableView(frame: kScreenBound, style: .grouped)
         tableView.delegate = self
         tableView.dataSource = self
+
+        tableView.estimatedRowHeight = 0
+        tableView.estimatedSectionHeaderHeight = 0
+        tableView.estimatedSectionFooterHeight = 0
+        tableView.tableHeaderView = UIView()
+        tableView.tableFooterView = UIView()
         return tableView
     }()
     
@@ -46,12 +52,12 @@ open  class BaseTableViewController: BaseUIViewController {
 }
 
 extension  BaseTableViewController:UITableViewDelegate,UITableViewDataSource{
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  open    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 0
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    open  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
 }
